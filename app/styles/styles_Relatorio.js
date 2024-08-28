@@ -1,148 +1,153 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      flexDirection: 'column',
-      justifyContent: 'space-around',
-    },
+  container: {
+    flex: 1,
+    flexDirection: 'column',
+    justifyContent: 'space-around',
+  },
+
+  header: {
+    flexDirection: 'column',
+    justifyContent: 'flex-start',
+    paddingHorizontal: 20,
+    paddingVertical: 20,
+    marginTop:35,
+    marginBottom:8,
+    // backgroundColor:'red'
+  },
+
+  seachContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    borderBottomWidth: 1,
+    paddingHorizontal: 10,
+    marginTop: '2%',
+    marginBottom: '1%',
+  },
+
+  seachInput: {
+    flex: 1,
+    fontSize: 16,
+    paddingVertical: 0,
+  },
+
+  searchIcon: {
+    marginLeft: 10,
+  },
+
+  informacao: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-around',
+    marginBottom: '5%',
+  },
+
+  textoInformativo: {
+    fontSize: 14,
+    fontWeight: 'bold',
+    color: '#808080',
+  },
+
+  infoTitulo: {
+    flexDirection: 'row',
+    // justifyContent: 'center',
+    alignItems: 'center',
+    gap: 10,
+    marginBottom:25
+  },
+
+  infoRelatorio: {
+    fontSize: 25,
+    fontWeight:'bold'
+  },
+
   
-    header: {
-      flexDirection: 'column',
-      justifyContent: 'flex-start',
-      paddingHorizontal: 16,
-      marginBottom: '8%',
-    },
-  
-    seachContainer: {
-      flexDirection: 'row',
-      alignItems: 'center',
-      borderBottomWidth: 1,
-      paddingHorizontal: 10,
-      marginTop: '2%',
-      marginBottom: '1%',
-    },
-  
-    seachInput: {
-      flex: 1,
-      fontSize: 16,
-      fontFamily: 'JejuGothic-Regular',
-      paddingVertical: 0
-    },
-  
-    searchIcon: {
-      marginLeft: 10,
-    },
-  
-    informacao: {
-      flexDirection: 'row',
-      alignItems: 'center',
-      justifyContent: 'space-around',
-      marginBottom: '5%',
-    },
-  
-    textoInformativo: {
-      fontSize: 13,
-      fontFamily: 'JejuGothic-Regular',
-      color: '#808080',
-      alignItems: 'center',
-    },
-  
-    infoTitulo: {
-      flexDirection: 'row',
-      justifyContent: 'center',
-      alignItems: 'center',
-      gap: 10,
-    },
-  
-    infoRelatorio: {
-      fontSize: 22,
-    },
-  
-    main: {
-      flexDirection: 'column',
-      marginLeft: '1%',
-      //alignItems:'',
-      //backgroundColor: 'green'
-    },
-  
-    buscar: {
-      flexDirection: 'row',
-      justifyContent: 'flex-start',
-      alignItems: 'center',
-      marginLeft: '7%',
-      marginBottom: '3%',
-    },
-  
-    textoBuscar: {
-      fontSize: 13,
-      fontFamily: 'JejuGothic-Regular',
-      color: '#808080',
-    },
-  
-    bnt_Status: {
-      flexDirection: 'row',
-      justifyContent: 'space-around',
-      alignItems: 'center',
-      gap: 1,
-      marginBottom:16
-    },
-  
-    bntAguardando: {
-      backgroundColor: '#fff',
-      borderColor: '#6D0909',
-      borderWidth: 2,
-      alignItems: 'center',
-      padding: 5,
-      width: 130,
-    },
-  
-    bntEntregue: {
-      backgroundColor: '#fff',
-      borderColor: '#157306',
-      borderWidth: 2,
-      alignItems: 'center',
-      padding: 5,
-      width: 130,
-    },
-  
-    textoAguardando: {
-      color: '#6D0909',
-    },
-  
-    textoEntregue: {
-      color: '#157306',
-    },
-  
-    bntPendente: {
-      backgroundColor: '#fff',
-      borderColor: '#D1C23B',
-      borderWidth: 2,
-      alignItems: 'center',
-      padding: 5,
-      width: 130,
-    },
-  
-    bntPendenteView: {
-      flexDirection: 'row',
-      justifyContent: 'flex-start',
-      alignItems: 'center',
-      marginLeft: '9%',
-    },
-  
-    textoPendente: {
-      color: '#D1C23B',
-    },
-  
-    footer: {
-      flexDirection: 'row',
-      justifyContent: 'space-between',
-      alignItems: 'center',
-      backgroundColor: '#579DD9',
-      paddingHorizontal: 20,
-      paddingVertical: 10,
-      maxHeight: 50,
-    },
-  });
+  buscar: {
+    flexDirection: 'row',
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+    marginLeft: '1%',
+    marginBottom: '4%',
+  },
+
+  textoBuscar: {
+    fontSize: 13,
+    color: '#808080',
+    fontWeight:'bold'
+  },
+
+  bnt_Status: {
+    flexDirection: 'row',
+    justifyContent: '',
+    alignItems: 'center',
+    // gap: 1,
+    marginBottom: 20,
+    marginRight:72,
+    marginLeft:7
+  },
+
+  bntAguardando: {
+    backgroundColor: '#fff',
+    borderColor: '#0C3854',
+    borderWidth: 2,
+    alignItems: 'center',
+    padding: 5,
+    width: 110,
+  },
+
+  bntEntregue: {
+    backgroundColor: '#fff',
+    borderColor: '#0C3854',
+    borderWidth: 2,
+    alignItems: 'center',
+    padding: 5,
+    width: 110,
+  },
+
+  textoAguardando: {
+    color: '#0C3854',
+  },
+
+  textoEntregue: {
+    color: '#0C3854',
+  },
+
+  bntPendente: {
+    backgroundColor: '#fff',
+    borderColor: '#0C3854',
+    borderWidth: 2,
+    alignItems: 'center',
+    padding: 5,
+    width: 110,
+  },
+
+  // bntPendenteView: {
+  //   flexDirection: 'row',
+  //   justifyContent: 'flex-start',
+  //   alignItems: 'center',
+  //   marginLeft: 7.2,
+  // },
+
+  textoPendente: {
+    color: '#0C3854',
+  },
+
+
+  main: {
+    flexDirection: 'column',
+    // backgroundColor: 'green'
+  },
+
+  footer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    backgroundColor: '#044D8C',
+    paddingHorizontal: 20,
+    paddingVertical: 10,
+    maxHeight: 50,
+  },
+});
 
 export default styles
